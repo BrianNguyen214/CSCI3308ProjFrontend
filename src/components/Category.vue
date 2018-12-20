@@ -36,7 +36,7 @@ export default {
     data(){
         return{
         //weekendUrl: 'http://127.0.0.1:8000/event/weekendEvents/',
-        weekendUrl: 'https://mondaybluesbackend.herokuapp.com/event/weekendEvents/',
+        //weekendUrl: 'https://mondaybluesbackend.herokuapp.com/event/weekendEvents/',
         //freeUrl: 'http://127.0.0.1:8000/event/freeEvents/',
         freeUrl: 'https://mondaybluesbackend.herokuapp.com/event/freeEvents/',
         //mainUrl: 'http://127.0.0.1:8000/event/particularEvents/',
@@ -157,6 +157,7 @@ export default {
 
     mounted(){
 
+        /*
         if (this.theCategory == "Over the Weekend"){
             
             axios(this.weekendUrl, {
@@ -173,9 +174,9 @@ export default {
                     console.log(this.theEvents)
 
                 })
-        }
+        } */
 
-        else if (this.theCategory == "Free"){
+        if (this.theCategory == "Free"){
             
             axios(this.freeUrl, {
                 method: 'GET',

@@ -10,12 +10,13 @@
                 </form>
 
                 <div id="myDropdown" class="dropdown-content">
-                    <a v-on:click="goToCategory(categoriesOfEvents[0])">Over the Weekend</a>
-                    <a v-on:click="goToCategory(categoriesOfEvents[1])">Music</a>
-                    <a v-on:click="goToCategory(categoriesOfEvents[2])">Art and Performances</a>
-                    <a v-on:click="goToCategory(categoriesOfEvents[3])">Health and Fitness</a>
-                    <a v-on:click="goToCategory(categoriesOfEvents[4])">Food and Drink</a>
-                    <a v-on:click="goToCategory(categoriesOfEvents[5])">Free</a>
+                <!--
+                    <a v-on:click="goToCategory(categoriesOfEvents[0])">Over the Weekend</a> -->
+                    <a v-on:click="goToCategory(categoriesOfEvents[0])">Music</a>
+                    <a v-on:click="goToCategory(categoriesOfEvents[1])">Art and Performances</a>
+                    <a v-on:click="goToCategory(categoriesOfEvents[2])">Health and Fitness</a>
+                    <a v-on:click="goToCategory(categoriesOfEvents[3])">Food and Drink</a>
+                    <a v-on:click="goToCategory(categoriesOfEvents[4])">Free</a>
                 </div>
             </div>
 
@@ -37,6 +38,7 @@
             </div>
         </div>
 
+        <!--
         <div class='eventSectionFirst'>
             <div class="eventSecHeaderGrid">
                 <div class="eventSHGITitle">
@@ -65,10 +67,10 @@
                 </div>               
             </div>
 
-        </div>
+        </div> -->
 
 
-        <div class='eventSection'>
+        <div class='eventSectionFirst'>
             <div class="eventSecHeaderGrid">
                 <div class="eventSHGITitle">
                     <h1 v-if="musicEvents.length">Music</h1>
@@ -236,7 +238,8 @@ export default {
             weekendEvents: [],
             freeEvents: [],
             searchedUpCategory: null,
-            categoriesOfEvents: ['Over the Weekend', 'Music', 'Art and Performances', 'Health and Fitness', 'Food and Drink', 'Free'],
+            //categoriesOfEvents: ['Over the Weekend', 'Music', 'Art and Performances', 'Health and Fitness', 'Food and Drink', 'Free'],
+            categoriesOfEvents: ['Music', 'Art and Performances', 'Health and Fitness', 'Food and Drink', 'Free'],
             //url: 'http://127.0.0.1:8000/event/allEvents/',
             url: 'https://mondaybluesbackend.herokuapp.com/event/allEvents/',
             monthDayDict: {

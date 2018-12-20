@@ -294,7 +294,7 @@ export default {
     }
 
     .card img {
-        height: 100%;
+        height: 20vh;
     }
 
     .cardGrid{

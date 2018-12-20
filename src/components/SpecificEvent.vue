@@ -201,6 +201,7 @@ export default {
         console.log(this.$route.params.token1)
         console.log(this.$route.params.token2)
         console.log(this.$route.params.token3)
+        console.log(this.mainUrl+this.$route.params.token1+"/"+this.$route.params.token2+"/"+this.$route.params.token3+"/")
         axios(this.mainUrl+this.$route.params.token1+"/"+this.$route.params.token2+"/"+this.$route.params.token3+"/", {
             method: 'GET',
             mode: 'no-cors',

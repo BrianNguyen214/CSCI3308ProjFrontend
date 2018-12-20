@@ -39,7 +39,8 @@ export default {
         weekendUrl: 'https://mondaybluesbackend.herokuapp.com/event/weekendEvents/',
         //freeUrl: 'http://127.0.0.1:8000/event/freeEvents/',
         freeUrl: 'https://mondaybluesbackend.herokuapp.com/event/freeEvents/',
-        mainUrl: 'http://127.0.0.1:8000/event/particularEvents/',
+        //mainUrl: 'http://127.0.0.1:8000/event/particularEvents/',
+        mainUrl: 'https://mondaybluesbackend.herokuapp.com/event/particularEvents/',
         theCategory: this.$route.params.category,
         theEvents: [],
         monthDayDict: {

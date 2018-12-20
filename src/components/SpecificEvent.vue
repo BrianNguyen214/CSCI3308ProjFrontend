@@ -78,8 +78,10 @@ export default {
 
     data(){
         return{
-        mainUrl: 'http://127.0.0.1:8000/event/specificEvent/',
-        coordUrl: 'http://127.0.0.1:8000/event/getEventCoords/',
+        //mainUrl: 'http://127.0.0.1:8000/event/specificEvent/',
+        mainUrl: 'https://mondaybluesbackend.herokuapp.com/event/specificEvents/',
+        //coordUrl: 'http://127.0.0.1:8000/event/getEventCoords/',
+        coordUrl: 'https://mondaybluesbackend.herokuapp.com/event/getEventCoords/',
         theEventToken1: this.$route.params.token1,
         theEventToken2: this.$route.params.token2,
         theEventToken3: this.$route.params.token3,

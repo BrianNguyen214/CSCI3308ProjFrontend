@@ -76,7 +76,7 @@
                     <h1 v-if="musicEvents.length">Music</h1>
                 </div>
                 <div class="eventSHGISeeMore">
-                    <a v-if="musicEvents.length" v-on:click="goToCategory(categoriesOfEvents[1])">View more</a>
+                    <a v-if="musicEvents.length" v-on:click="goToCategory(categoriesOfEvents[0])">View more</a>
                 </div>
             </div>
 
@@ -106,7 +106,7 @@
                     <h1 v-if="artAndPerfEvents.length">Art and Performances</h1>
                 </div>
                 <div class="eventSHGISeeMore">
-                    <a v-if="artAndPerfEvents.length" v-on:click="goToCategory(categoriesOfEvents[2])">View more</a>
+                    <a v-if="artAndPerfEvents.length" v-on:click="goToCategory(categoriesOfEvents[1])">View more</a>
                 </div>
             </div>
 
@@ -136,7 +136,7 @@
                     <h1 v-if="healthAndFitEvents.length">Health and Fitness</h1>
                 </div>
                 <div class="eventSHGISeeMore">
-                    <a v-if="healthAndFitEvents.length" v-on:click="goToCategory(categoriesOfEvents[3])">View more</a>
+                    <a v-if="healthAndFitEvents.length" v-on:click="goToCategory(categoriesOfEvents[2])">View more</a>
                 </div>
             </div>
 
@@ -166,7 +166,7 @@
                     <h1 v-if="foodAndDrinkEvents.length">Food and Drink</h1>
                 </div>
                 <div class="eventSHGISeeMore">
-                    <a v-if="foodAndDrinkEvents.length" v-on:click="goToCategory(categoriesOfEvents[4])">View more</a>
+                    <a v-if="foodAndDrinkEvents.length" v-on:click="goToCategory(categoriesOfEvents[3])">View more</a>
                 </div>
             </div>
 
@@ -196,7 +196,7 @@
                     <h1 v-if="freeEvents.length">Free</h1>
                 </div>
                 <div class="eventSHGISeeMore">
-                    <a v-if="freeEvents.length" v-on:click="goToCategory(categoriesOfEvents[5])">View more</a>
+                    <a v-if="freeEvents.length" v-on:click="goToCategory(categoriesOfEvents[4])">View more</a>
                 </div>
             </div>
 

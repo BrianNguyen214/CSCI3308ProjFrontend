@@ -237,7 +237,8 @@ export default {
             freeEvents: [],
             searchedUpCategory: null,
             categoriesOfEvents: ['Over the Weekend', 'Music', 'Art and Performances', 'Health and Fitness', 'Food and Drink', 'Free'],
-            url: 'http://127.0.0.1:8000/event/allEvents/',
+            //url: 'http://127.0.0.1:8000/event/allEvents/',
+            url: 'https://mondaybluesbackend.herokuapp.com/event/allEvents/',
             monthDayDict: {
                 1: 31,
                 2: 28,

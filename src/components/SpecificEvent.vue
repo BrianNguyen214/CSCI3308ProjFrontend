@@ -78,7 +78,8 @@ export default {
 
     data(){
         return{
-
+        mainUrl: 'http://127.0.0.1:8000/event/specificEvent/',
+        coordUrl: 'http://127.0.0.1:8000/event/getEventCoords/',
         theEventToken1: this.$route.params.token1,
         theEventToken2: this.$route.params.token2,
         theEventToken3: this.$route.params.token3,
@@ -198,7 +199,7 @@ export default {
         console.log(this.$route.params.token1)
         console.log(this.$route.params.token2)
         console.log(this.$route.params.token3)
-        axios('http://127.0.0.1:8000/event/specificEvent/'+this.$route.params.token1+"/"+this.$route.params.token2+"/"+this.$route.params.token3+"/", {
+        axios(this.mainUrl+this.$route.params.token1+"/"+this.$route.params.token2+"/"+this.$route.params.token3+"/", {
             method: 'GET',
             mode: 'no-cors',
             headers: {
@@ -212,7 +213,7 @@ export default {
                 //this.theEvent = response["data"]["test"]
                 console.log(this.theEvent)
 
-                axios('http://127.0.0.1:8000/event/getEventCoords/'+this.theEvent['Location']+"/", {
+                axios(this.coordUrl+this.theEvent['Location']+"/", {
                 method: 'GET',
                 mode: 'no-cors',
                 headers: {

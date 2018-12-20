@@ -35,7 +35,11 @@ export default {
 
     data(){
         return{
-        
+        //weekendUrl: 'http://127.0.0.1:8000/event/weekendEvents/',
+        weekendUrl: 'https://mondaybluesbackend.herokuapp.com/event/weekendEvents/',
+        //freeUrl: 'http://127.0.0.1:8000/event/freeEvents/',
+        freeUrl: 'https://mondaybluesbackend.herokuapp.com/event/freeEvents/',
+        mainUrl: 'http://127.0.0.1:8000/event/particularEvents/',
         theCategory: this.$route.params.category,
         theEvents: [],
         monthDayDict: {
@@ -154,7 +158,7 @@ export default {
 
         if (this.theCategory == "Over the Weekend"){
             
-            axios('http://127.0.0.1:8000/event/weekendEvents/', {
+            axios(this.weekendUrl, {
                 method: 'GET',
                 mode: 'no-cors',
                 headers: {
@@ -172,7 +176,7 @@ export default {
 
         else if (this.theCategory == "Free"){
             
-            axios('http://127.0.0.1:8000/event/freeEvents/', {
+            axios(this.freeUrl, {
                 method: 'GET',
                 mode: 'no-cors',
                 headers: {
@@ -190,7 +194,7 @@ export default {
                  
         else{
 
-            axios('http://127.0.0.1:8000/event/particularEvents/'+this.$route.params.category+"/", {
+            axios(this.mainUrl + this.$route.params.category + "/", {
                 method: 'GET',
                 mode: 'no-cors',
                 headers: {
